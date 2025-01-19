@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Arrays</h2>
+    <p>Array methods are always generic — they don't access any internal data of the array object. They only access the array
+    elements through the length property and the indexed elements. This means that they can be called on array-like objects
+    as well.</p>
+    <p id="MyJoin"></p>
+    <p id ="MyFirstPop"></p>
+    <p id="MySecondPop"></p>
+    <script>
+        var fruits = ["Banana","Orange","Apple","Mango"];
+
+        document.getElementById("MyJoin").innerHTML = fruits.join("* "); fruits.pop()
+         document.getElementById("MyFirstPop").innerHTML = fruits; fruits.pop()
+         document.getElementById("MySecondPop").innerHTML = fruits
+
+    </script>
+</body>
+</html>
