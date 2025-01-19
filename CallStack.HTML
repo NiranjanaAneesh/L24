@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Call Stack</h2>
+    <p>A call stack is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its
+    place in a script that calls multiple functions — what function is currently being run and what functions are called
+    from within that function, etc.</p>
+    <p>Do a calculation then display the result.</p>
+    <p id="demo"></p>
+    <script>
+        function add(a,b){
+            return a+b;
+        }
+          function average(a, b){
+                return add (a,b)/2;
+            }
+        let result = average(10,20);
+        document.getElementById("demo").innerHTML = result;
+    </script>
+</body>
+</html>
